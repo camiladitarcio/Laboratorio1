@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1558660673 source:/home/alumno/DITAR/persona/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+	"utn.h"
+
+1558660695 /home/alumno/DITAR/persona/persona.h
+
+1558044025 /home/alumno/DITAR/persona/utn.h
+
+1558044040 source:/home/alumno/DITAR/persona/utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+
+1558660605 source:/home/alumno/DITAR/persona/persona.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+	"utn.h"
+
