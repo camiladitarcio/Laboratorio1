@@ -8,8 +8,16 @@
 int main()
 {
     Persona *arrayPersonas[QTY_PEOPLE];
-    int opcionMenu;
+    //int opcionMenu;
+    Per_inicializar(arrayPersonas,QTY_PEOPLE);
+    int cantPersonas = Per_parser(arrayPersonas,QTY_PEOPLE,"data.csv");
+    int i;
+    for(i=0;i<size;i++)
+    {
 
+    }
+
+/*
     do
     {
         utn_getUnsignedInt("\n1)Agregar Persona \n2)Modificar Persona \n3)Eliminar Persona \n4)Imprimir Personas \n5)Salir",
@@ -36,6 +44,6 @@ int main()
         }
     }
     while(opcionMenu!=5);
-
+*/
     return 0;
 }

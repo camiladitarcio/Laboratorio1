@@ -31,7 +31,6 @@ Persona* per_newParametros(int id, char* nombre, char* apellido, int edad)
     Persona* p = per_new();
     if(p!=NULL)
     {
-        Per_setId(p, id);
         Per_setNombre(p, nombre);
         Per_setApellido(p, apellido);
         Per_setEdad(p, edad);
@@ -280,4 +279,40 @@ int Per_listar(Persona* array[],int size)
     }
 
     return 0;
+}
+
+int Per_parser(Persona* array[], int size, char* fileName)
+{
+    char aux[512];
+    char auxId[512];
+    char auxNombre[512];
+    char auxApellido[512];
+    char auxEdad[512];
+    int r;
+    int index=-1;
+
+    Persona* pPersona;
+    FILE* file;
+    file = fopen(fileName,"r"); // o tambien: FILE* file = fopen(fileName,"r");
+
+    if(file!=NULL)
+    {
+        fscanf(file,"%[^\n]\n",aux); //saltea linea
+        //fgets(aux,512,file) //saltea linea
+        do
+        {
+            r = fscanf(file,"%[^,],%[^,],%[^,],%[^\n]\n",auxId,auxNombre,auxApellido,auxEdad);
+            if(r==4)
+            {
+                pPersona=per_newParametros(auxId,auxNombre,auxApellido,auxEdad); // todas cadenas // devuelve direccion de puntero
+                if(pPersona!=NULL)
+                {
+                        array[index] = pPersona;
+                        index++;
+                }//printf("%s %s %s %s\n",auxId,auxNombre,auxApellido,auxEdad);
+            }// }while(feof(file)==0)
+        }while(!feof(file));
+    }
+    fclose(file);
+    return index;
 }

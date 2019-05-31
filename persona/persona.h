@@ -27,6 +27,6 @@ int Per_getApellido(Persona* this, char* resultado);
 int Per_setEdad(Persona* this, int edad);
 int Per_getEdad(Persona* this, int* resultado);
 int Per_delete(Persona* this);
-
+int Per_parser(Persona* array[], int size, char* fileName);
 
 #endif

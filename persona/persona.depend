@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1558660673 source:/home/alumno/DITAR/persona/main.c
+1559264462 source:/home/alumno/DITAR/persona/main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"persona.h"
 	"utn.h"
 
-1558660695 /home/alumno/DITAR/persona/persona.h
+1559263665 /home/alumno/DITAR/persona/persona.h
 
 1558044025 /home/alumno/DITAR/persona/utn.h
 
