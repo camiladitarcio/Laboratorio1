@@ -167,6 +167,7 @@ int Per_modificar(Persona* array[], int size)
     return ret;
 }
 
+// VALIDAR SETS CON UTN IS_VALIDNUMBER O IS_VALIDSTRING
 int Per_delete(Persona* this)
 {
     int retorno = -1;
