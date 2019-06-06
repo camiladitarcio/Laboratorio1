@@ -7,7 +7,8 @@
 
 int main()
 {
-    Persona *arrayPersonas[QTY_PEOPLE];
+    LinkedList* listaEmpleados = ll_newLinkedList(); // agregar de la nueva biblioteca
+    //Persona *arrayPersonas[QTY_PEOPLE];
     //int opcionMenu;
     Per_inicializar(arrayPersonas,QTY_PEOPLE);
     int cantPersonas = Per_parser(arrayPersonas,QTY_PEOPLE,"data.csv");
