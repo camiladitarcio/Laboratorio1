@@ -282,7 +282,7 @@ int Per_listar(Persona* array[],int size)
     return 0;
 }
 
-int Per_parser(Persona* array[], int size, char* fileName)
+int Per_parser(LinkedList* pArrayListPersonas, int size, char* fileName)
 {
     char aux[512];
     char auxId[512];
@@ -308,7 +308,6 @@ int Per_parser(Persona* array[], int size, char* fileName)
                 pPersona=per_newParametros(auxId,auxNombre,auxApellido,auxEdad); // todas cadenas // devuelve direccion de puntero
                 if(pPersona!=NULL)
                 {
-                        array[index] = pPersona;
                         index++;
                 }//printf("%s %s %s %s\n",auxId,auxNombre,auxApellido,auxEdad);
             }// }while(feof(file)==0)
