@@ -11,9 +11,8 @@
  * \return int
  *
  */
- /*
-int controller_loadFromText(char* path , LinkedList* pArrayListEmployee)
 
+int controller_loadFromText(char* path , LinkedList* pArrayListEmployee)
 {
     FILE* pFile;
     pFile = fopen(path,"r");
@@ -21,7 +20,7 @@ int controller_loadFromText(char* path , LinkedList* pArrayListEmployee)
     fclose(pFile);
     return 1;
 }
-*/
+
 /** \brief Carga los datos de los empleados desde el archivo data.csv (modo binario).
  *
  * \param path char*
@@ -76,7 +75,7 @@ int controller_removeEmployee(LinkedList* pArrayListEmployee)
  * \param pArrayListEmployee LinkedList*
  * \return int
  *
- */
+ */ 
 int controller_ListEmployee(LinkedList* pArrayListEmployee)
 {
     return 1;
