@@ -53,24 +53,28 @@
 	"LinkedList.h"
 	"Employee.h"
 
-1559780964 source:/home/alumno/DITAR/Linux_64/Controller.c
+1559867615 source:/home/alumno/DITAR/Linux_64/Controller.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"
 	"Employee.h"
+	"Controller.h"
+	"parser.h"
 
 1559780476 /home/alumno/DITAR/Linux_64/LinkedList.h
 
-1559780617 /home/alumno/DITAR/Linux_64/Employee.h
+1559866626 /home/alumno/DITAR/Linux_64/Employee.h
 
-1559781335 source:/home/alumno/DITAR/Linux_64/Employee.c
+1559866774 source:/home/alumno/DITAR/Linux_64/Employee.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"Employee.h"
 	"LinkedList.h"
+	"Controller.h"
+	"utn.h"
 
-1559779844 source:/home/alumno/DITAR/Linux_64/parser.c
+1559865365 source:/home/alumno/DITAR/Linux_64/parser.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"
@@ -83,4 +87,15 @@
 	"utn.h"
 
 1558044025 /home/alumno/DITAR/Linux_64/utn.h
+
+1533133022 /home/alumno/DITAR/Linux_64/Controller.h
+
+1533133022 /home/alumno/DITAR/Linux_64/parser.h
+
+1559863671 source:/home/alumno/DITAR/Linux_64/main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
 

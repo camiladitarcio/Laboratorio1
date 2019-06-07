@@ -4,9 +4,11 @@
 #include "Employee.h"
 #include "LinkedList.h"
 #include "Controller.h"
+#include "utn.h"
 
-static int cont=0;
-static int generarID(void)
+static int cont=1000;
+
+int employee_generarID(void)
 {
     cont++;
     return cont;
@@ -17,22 +19,45 @@ void employee_inicializarIdInicial(int val)
     val=cont;
 }
 
-Employee* per_new(void)
+Employee* employee_new(void)
 {
     return (Employee*) malloc(sizeof(Employee));
 }
 
 Employee* employee_newParametros(char* idStr,char* nombreStr,char* horasTrabajadasStr,char* sueldo)
 {
-    Employee* p = per_new();
+    Employee* p = employee_new();
     if(p!=NULL)
     {
-        employee_setIdString(p,*idStr);
-        employee_setNombre(p, nombreStr);
-        employee_setHorasTrabajadasString(p, *horasTrabajadasStr);
-        employee_setSueldoString(p, *sueldo);
+       // printf("%s\n",idStr);
+        if(employee_setIdString(p,idStr)==-1 ||
+        employee_setNombre(p, nombreStr)==-1 ||
+        employee_setHorasTrabajadasString(p,horasTrabajadasStr)==-1 ||
+        employee_setSueldoString(p,sueldo)==-1)
+        {
+            employee_delete(p);
+        }
+
     }
-    return 0;
+    return p;
+}
+
+Employee* employee_newParametrosInt(int idStr,char* nombreStr,int horasTrabajadasStr,int sueldo)
+{
+    Employee* p = employee_new();
+    if(p!=NULL)
+    {
+       // printf("%s\n",idStr);
+        if(employee_setId(p,idStr)==-1 ||
+        employee_setNombre(p, nombreStr)==-1 ||
+        employee_setHorasTrabajadas(p,horasTrabajadasStr)==-1 ||
+        employee_setSueldo(p,sueldo)==-1)
+        {
+            employee_delete(p);
+        }
+
+    }
+    return p;
 }
 
 int employee_inicializar(Employee* array[], int size)
@@ -70,27 +95,29 @@ int employee_buscarLibre(Employee* array[], int size, int* posicion)
     return ret;
 }
 
-/*
+
 int employee_alta(Employee* array[], int size)
 {
-    int posLibre;
     char auxNombre[40];
-    int auxHorasTrabajadas[40];
+    int auxHorasTrabajadas;
     int auxSueldo;
     int auxId;
+    int ret = -1;
 
     if(array!=NULL && size>0)
     {
-        Employee_buscarLibre(array,size,&posLibre);
-        auxId = generarID();
-        utn_getName("\nIngrese nombre:","\nERROR",1,40,2,auxNombre);
-        utn_getName("\nIngrese hr trabajadas:","\nERROR",0,25,2,&auxHorasTrabajadas);
-        utn_getSignedInt("\nIngrese sueldo:","\nERROR",1,4,1,35000,2,&auxSueldo);
-        employee_newParametros(auxId,auxNombre,&auxHorasTrabajadas,&auxSueldo);
+            auxId = employee_generarID();
+            utn_getName("\nIngrese nombre:","\nERROR",1,40,2,auxNombre);
+            utn_getSignedInt("\nIngrese hr trabajadas:","\nERROR",0,6,1,24,2,&auxHorasTrabajadas);
+            utn_getSignedInt("\nIngrese sueldo:","\nERROR",1,4,1,35000,2,&auxSueldo);
+
+            employee_newParametrosInt(auxId,auxNombre,auxHorasTrabajadas,auxSueldo);
+            ret = 0;
+
     }
-    return 0;
+    return ret;
 }
-*/
+
 
 int employee_buscarID(Employee* array[], int size, int valorBuscado, int* posicion)
 {
@@ -186,14 +213,14 @@ int employee_setId(Employee* this, int id)
     return retorno;
 }
 
-int employee_setIdString(Employee* this,char id)
+int employee_setIdString(Employee* this,char* id)
 {
-    char auxId;
+    int auxId;
     int retorno = -1;
-    if(this != NULL && id >= 0)
+    if(this != NULL && isValidNumber(id))
     {
-        strcpy(auxId,id);
-        atoi(auxId);
+        auxId = atoi(id);
+       // printf("%d\n",auxId);
         this->id = auxId;
         retorno = 0;
     }
@@ -222,14 +249,25 @@ int employee_setSueldo(Employee* this, int sueldo)
     return retorno;
 }
 
-int employee_setSueldoString(Employee* this,char sueldo)
+int employee_setSueldoString(Employee* this,char* sueldo)
 {
     int auxSueldo;
     int retorno = -1;
     if(this != NULL && sueldo >= 0)
     {
         auxSueldo=atoi(sueldo);
-        this->id = auxSueldo;
+        this->sueldo = auxSueldo;
+        retorno = 0;
+    }
+    return retorno;
+}
+
+int employee_getSueldo(Employee* this, int* sueldo)
+{
+    int retorno = -1;
+    if(this != NULL && sueldo != NULL)
+    {
+        *sueldo = this->sueldo;
         retorno = 0;
     }
     return retorno;
@@ -269,29 +307,33 @@ int employee_setHorasTrabajadas(Employee* this, int horasTrabajadas)
     return retorno;
 }
 
-int employee_setHorasTrabajadasString(Employee* this,char horasTrabajadas)
+int employee_setHorasTrabajadasString(Employee* this,char* horasTrabajadas)
 {
     int auxHorasTrabajadas;
     int retorno = -1;
     if(this != NULL && horasTrabajadas >= 0)
     {
         auxHorasTrabajadas=atoi(horasTrabajadas);
-        this->id = auxHorasTrabajadas;
+        this->horasTrabajadas = auxHorasTrabajadas;
         retorno = 0;
     }
     return retorno;
 }
 
-int employee_getSueldo(Employee* this, int* sueldo)
+int employee_getHorasTrabajadas(Employee* this,int* horasTrabajadas)
 {
+
     int retorno = -1;
-    if(this != NULL && sueldo != NULL)
+    if(this != NULL && horasTrabajadas >= 0)
     {
-        *sueldo = this->sueldo;
+
+        *horasTrabajadas = this->horasTrabajadas;
         retorno = 0;
     }
     return retorno;
 }
+
+
 
 int employee_listar(Employee* array[],int size)
 {

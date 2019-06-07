@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include "LinkedList.h"
 #include "Employee.h"
-#include "Controller.h"
 
 /** \brief Parsea los datos los datos de los empleados desde el archivo data.csv (modo texto).
  *
@@ -13,7 +12,6 @@
  */
 int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee)
 {
-    char bufferAux[512];
     char bufferId[4096];
     char bufferNombre[4096];
     char bufferHorasTrabajadas[4096];
@@ -23,37 +21,22 @@ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee)
 
     if(pFile != NULL)
     {
-        fscanf(pFile,"%[^\n]\n",bufferAux);
+        fscanf(pFile,"%[^,],%[^,],%[^,],%[^\n]\n",bufferId,bufferNombre,bufferHorasTrabajadas,bufferSueldo);
         while(!feof(pFile))
         {
-            fscanf(pFile,"%[^,],%[^,],%[^,],%[^\n]\n",  bufferId,
-                                                  bufferNombre,
-                                                  bufferHorasTrabajadas,
-                                                  bufferSueldo);
+            fscanf(pFile,"%[^,],%[^,],%[^,],%[^\n]\n",bufferId,bufferNombre,bufferHorasTrabajadas,bufferSueldo);
 
-            pEmpleado = employee_newParametros(     bufferId,
-                                                    bufferNombre,
-                                                    bufferHorasTrabajadas,
-                                                    bufferSueldo);
-k
-
+            pEmpleado = employee_newParametros(bufferId,bufferNombre,bufferHorasTrabajadas,bufferSueldo);
 
             if(pEmpleado != NULL)
             {
-                if(ll_add(pArrayListEmployee,pEmpleado))
+                if(!ll_add(pArrayListEmployee,pEmpleado))
                 {
-
-
+                    //printf("OK2");
                 }
             }
-
         }
     }
-
-
-
-
-
 
     return 1;
 }
@@ -67,6 +50,20 @@ k
  */
 int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee)
 {
+    Employee *pEmpleado;
 
+    if(pFile!=NULL){
+        do{
+            pEmpleado = employee_new();
+            if(pEmpleado!=NULL && (fread(pEmpleado,sizeof(Employee),1,pFile)== 1))
+            {
+                ll_add(pArrayListEmployee,pEmpleado);
+            }
+            else
+            {
+               employee_delete(pEmpleado);
+            }
+        }while(feof(pFile));
+     }
     return 1;
 }
