@@ -12,8 +12,6 @@ Employee* employee_new();
 Employee* employee_newParametros(char* idStr,char* nombreStr,char* horasTrabajadasStr,char* sueldo);
 Employee* employee_newParametrosInt(int idStr,char* nombreStr,int horasTrabajadasStr,int sueldo);
 void employee_delete(Employee* this);
-int employee_buscarLibre(Employee* array[], int size, int* posicion);
-int employee_generarID(void);
 
 int employee_setId(Employee* this,int id);
 int employee_setIdString(Employee* this,char* id);
