@@ -37,9 +37,7 @@ Employee* employee_newParametros(char* idStr,char* nombreStr,char* horasTrabajad
         {
             employee_delete(p);
         }
-
     }
-    return p;
 }
 
 Employee* employee_newParametrosInt(int idStr,char* nombreStr,int horasTrabajadasStr,int sueldo)
@@ -57,63 +55,9 @@ Employee* employee_newParametrosInt(int idStr,char* nombreStr,int horasTrabajada
         }
 
     }
-    return p;
+    return 0;
 }
 
-int employee_inicializar(Employee* array[], int size)
-{
-    int i;
-    int ret = -1;
-    if(array!=NULL && size>=0)
-    {
-        for(i=0;i<size;i++)
-        {
-
-            array[i] = NULL;
-        }
-    ret = 0;
-    }
-    return ret;
-}
-
-int employee_buscarLibre(Employee* array[], int size, int* posicion)
-{
-    int i;
-    int ret = -1;
-    if(array!=NULL && size>0)
-    {
-        for(i=0;i<size;i++)
-        {
-            if(array[i]==NULL)
-            {
-                *posicion = i;
-                ret = 0;
-                break;
-            }
-        }
-    }
-    return ret;
-}
-
-int employee_buscarID(Employee* array[], int size, int valorBuscado, int* posicion)
-{
-    int retorno=-1;
-    int i;
-    if(array!= NULL && size>=0)
-    {
-        for(i=0;i<size;i++)
-        {
-            if(array[i]->id==valorBuscado)
-            {
-                retorno=0;
-                *posicion=i;
-                break;
-            }
-        }
-    }
-    return retorno;
-}
-// VALIDAR SETS CON UTN IS_VALIDNUMBER O IS_VALIDSTRING
 void employee_delete(Employee* this)
 {
     if(this != NULL)
@@ -251,23 +195,6 @@ int employee_getHorasTrabajadas(Employee* this,int* horasTrabajadas)
         retorno = 0;
     }
     return retorno;
-}
-
-
-
-int employee_listar(Employee* array[],int size)
-{
-    int i;
-
-    if(array!=NULL&&size>0)
-    {
-        for(i=0;i<size;i++)
-        {
-            printf("\nNombre: %s\tHoras Trabajadas: %d\tSueldo: %d",array[i]->nombre,array[i]->horasTrabajadas,array[i]->sueldo);
-        }
-    }
-
-    return 0;
 }
 
 int employee_parser(LinkedList* pArrayListEmployeesonas, int size, char* fileName)
