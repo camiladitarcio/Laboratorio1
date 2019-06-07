@@ -95,30 +95,6 @@ int employee_buscarLibre(Employee* array[], int size, int* posicion)
     return ret;
 }
 
-
-int employee_alta(Employee* array[], int size)
-{
-    char auxNombre[40];
-    int auxHorasTrabajadas;
-    int auxSueldo;
-    int auxId;
-    int ret = -1;
-
-    if(array!=NULL && size>0)
-    {
-            auxId = employee_generarID();
-            utn_getName("\nIngrese nombre:","\nERROR",1,40,2,auxNombre);
-            utn_getSignedInt("\nIngrese hr trabajadas:","\nERROR",0,6,1,24,2,&auxHorasTrabajadas);
-            utn_getSignedInt("\nIngrese sueldo:","\nERROR",1,4,1,35000,2,&auxSueldo);
-
-            employee_newParametrosInt(auxId,auxNombre,auxHorasTrabajadas,auxSueldo);
-            ret = 0;
-
-    }
-    return ret;
-}
-
-
 int employee_buscarID(Employee* array[], int size, int valorBuscado, int* posicion)
 {
     int retorno=-1;
@@ -137,62 +113,6 @@ int employee_buscarID(Employee* array[], int size, int valorBuscado, int* posici
     }
     return retorno;
 }
-
-/*
-int employee_modificar(Employee* array[], int size)
-{
-    int ret = -1;
-    int i;
-    int idBuscado;
-    int pos;
-    int opcionMenu;
-    char auxNombre[40];
-    char auxApellido[40];
-    int auxEdad;
-    Employee* pAux;
-
-    if(array!=NULL && size>0)
-    {
-        utn_getSignedInt("\nIngrese edad:","\nERROR",1,3,1,size,2,&idBuscado);
-        Employee_buscarID(array,size,idBuscado,&pos);
-        for(i=0;i<size;i++)
-        {
-            if(array[i]->id==idBuscado)
-            {
-                utn_getSignedInt("\nMODIFICAR: 1(nombre) 2(apellido) 3(edad) 4(salir)","\nERROR",1,4,1,4,2,&opcionMenu);
-                do{
-                switch(opcionMenu)
-                    {
-                    case 1:
-                    utn_getName("\nIngrese nombre:","\nERROR",1,40,2,auxNombre);
-                    Employee_getNombre(pAux,auxNombre);
-                    break;
-
-                    case 2:
-                    utn_getName("\nIngrese nombre:","\nERROR",1,40,2,auxApellido);
-                    Employee_getApellido(pAux,auxApellido);
-                    break;
-
-                    case 3:
-                    utn_getSignedInt("\nIngrese edad:","\nERROR",1,4,1,99,2,&auxEdad);
-                    Employee_getEdad(pAux,&auxEdad);
-                    break;
-
-                    default:
-                    printf("No es una opcion valida");
-                    }
-                }while(opcionMenu!=4);
-                ret = 0;
-            }
-            else
-            {
-                printf("\nNo se ha encontrado ese ID");
-            }
-        }
-    }
-    return ret;
-}
-*/
 // VALIDAR SETS CON UTN IS_VALIDNUMBER O IS_VALIDSTRING
 void employee_delete(Employee* this)
 {
