@@ -1,71 +1,25 @@
 # depslib dependency file v1.0
-1533062952 source:/home/mauro/Descargas/Practica_Pair_v1.2/Linux_64/Employee.c
-
-1533063050 source:/home/mauro/Descargas/Practica_Pair_v1.2/Linux_64/main.c
+1560200714 source:/home/ditar/dit/Laboratorio1/persona/Linux_64/Controller.c
 	<stdio.h>
 	<stdlib.h>
-	"LinkedList.h"
-	"Employee.h"
-
-1532354323 /home/mauro/Descargas/Practica_Pair_v1.2/Linux_64/LinkedList.h
-
-1533062926 /home/mauro/Descargas/Practica_Pair_v1.2/Linux_64/Employee.h
-
-1533063080 source:/home/mauro/Descargas/Practica_Pair_v1.2/Linux_64/parser.c
-	<stdio.h>
-	<stdlib.h>
-	"LinkedList.h"
-	"Employee.h"
-
-1533062952 source:/home/mauro/Descargas/TP3/Linux_64/Employee.c
-
-1533066103 source:/home/mauro/Descargas/TP3/Linux_64/main.c
-	<stdio.h>
-	<stdlib.h>
-	"LinkedList.h"
-	"Employee.h"
-
-1532354323 /home/mauro/Descargas/TP3/Linux_64/LinkedList.h
-
-1533066103 /home/mauro/Descargas/TP3/Linux_64/Employee.h
-
-1533063080 source:/home/mauro/Descargas/TP3/Linux_64/parser.c
-	<stdio.h>
-	<stdlib.h>
-	"LinkedList.h"
-	"Employee.h"
-
-1533145792 source:/home/mauro/Descargas/TP3-20180801T173619Z-001/TP3/Linux_64/Controller.c
-	<stdio.h>
-	<stdlib.h>
-	"LinkedList.h"
-	"Employee.h"
-
-1533118898 /home/mauro/Descargas/TP3-20180801T173619Z-001/TP3/Linux_64/LinkedList.h
-
-1533118898 /home/mauro/Descargas/TP3-20180801T173619Z-001/TP3/Linux_64/Employee.h
-
-1533118898 source:/home/mauro/Descargas/TP3-20180801T173619Z-001/TP3/Linux_64/Employee.c
-
-1533145890 source:/home/mauro/Descargas/TP3-20180801T173619Z-001/TP3/Linux_64/parser.c
-	<stdio.h>
-	<stdlib.h>
-	"LinkedList.h"
-	"Employee.h"
-
-1559867615 source:/home/alumno/DITAR/Linux_64/Controller.c
-	<stdio.h>
-	<stdlib.h>
+	<string.h>
 	"LinkedList.h"
 	"Employee.h"
 	"Controller.h"
 	"parser.h"
+	"utn.h"
 
-1559780476 /home/alumno/DITAR/Linux_64/LinkedList.h
+1559879609 /home/ditar/dit/Laboratorio1/persona/Linux_64/LinkedList.h
 
-1559866626 /home/alumno/DITAR/Linux_64/Employee.h
+1559879738 /home/ditar/dit/Laboratorio1/persona/Linux_64/Employee.h
 
-1559866774 source:/home/alumno/DITAR/Linux_64/Employee.c
+1559879609 /home/ditar/dit/Laboratorio1/persona/Linux_64/Controller.h
+
+1559879609 /home/ditar/dit/Laboratorio1/persona/Linux_64/parser.h
+
+1559879609 /home/ditar/dit/Laboratorio1/persona/Linux_64/utn.h
+
+1560030410 source:/home/ditar/dit/Laboratorio1/persona/Linux_64/Employee.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -74,28 +28,22 @@
 	"Controller.h"
 	"utn.h"
 
-1559865365 source:/home/alumno/DITAR/Linux_64/parser.c
-	<stdio.h>
-	<stdlib.h>
-	"LinkedList.h"
-	"Employee.h"
-
-1558044040 source:/home/alumno/DITAR/Linux_64/utn.c
-	<stdio.h>
-	<stdlib.h>
-	<string.h>
-	"utn.h"
-
-1558044025 /home/alumno/DITAR/Linux_64/utn.h
-
-1533133022 /home/alumno/DITAR/Linux_64/Controller.h
-
-1533133022 /home/alumno/DITAR/Linux_64/parser.h
-
-1559863671 source:/home/alumno/DITAR/Linux_64/main.c
+1560030253 source:/home/ditar/dit/Laboratorio1/persona/Linux_64/main.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"
 	"Controller.h"
 	"Employee.h"
+
+1560184505 source:/home/ditar/dit/Laboratorio1/persona/Linux_64/parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1559879609 source:/home/ditar/dit/Laboratorio1/persona/Linux_64/utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
 

@@ -8,7 +8,7 @@
 
 static int cont=1000;
 
-int employee_generarID(void)
+int employee_generarId(void)
 {
     cont++;
     return cont;
@@ -29,7 +29,7 @@ Employee* employee_newParametros(char* idStr,char* nombreStr,char* horasTrabajad
     Employee* p = employee_new();
     if(p!=NULL)
     {
-       // printf("%s\n",idStr);
+        //printf("%s\n",idStr);
         if(employee_setIdString(p,idStr)==-1 ||
         employee_setNombre(p, nombreStr)==-1 ||
         employee_setHorasTrabajadasString(p,horasTrabajadasStr)==-1 ||
@@ -38,6 +38,7 @@ Employee* employee_newParametros(char* idStr,char* nombreStr,char* horasTrabajad
             employee_delete(p);
         }
     }
+    return p;
 }
 
 Employee* employee_newParametrosInt(int idStr,char* nombreStr,int horasTrabajadasStr,int sueldo)
@@ -55,7 +56,7 @@ Employee* employee_newParametrosInt(int idStr,char* nombreStr,int horasTrabajada
         }
 
     }
-    return 0;
+    return p;
 }
 
 void employee_delete(Employee* this)
@@ -190,9 +191,32 @@ int employee_getHorasTrabajadas(Employee* this,int* horasTrabajadas)
     int retorno = -1;
     if(this != NULL && horasTrabajadas >= 0)
     {
-
         *horasTrabajadas = this->horasTrabajadas;
         retorno = 0;
     }
     return retorno;
 }
+/*
+int employee_criterioNombre(void* thisA,void* thisB)
+{
+    char nombreA[128];
+    char nombreB[128];
+    int ret = 0;
+
+    employee_getNombre((Employee*),nombreA);
+
+
+    employee_getNombre((Employee*)thisA,nombreA);
+    employee_getNombre((Employee*)thisB,nombreB);
+
+        if(strcmp(nombreA,nombreB)>0)
+        {
+            retorno=1;
+        }
+        else if(strcmp(nombreA,nombreB)<0)
+        {
+            retorno=-1;
+        }
+    return retorno;
+}
+*/
