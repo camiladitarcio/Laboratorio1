@@ -48,10 +48,9 @@ void addNodeTestCase01(void)
     list = ll_newLinkedList();
     test_addNode(list,0,NULL);
     utest_assertEqualsIntMsg(1,list->size,"\nError en el valor de size de la lista se debe incrementar al agregar nodos\n");
-
 }
 
-/*void addNodeTestCase02(void)
+void addNodeTestCase02(void)
 {
     int i,r;
     LinkedList* list;
@@ -132,4 +131,4 @@ void addNodeTestCase05(void)
         utest_assertEqualsPointerMsg(nodoAux->pElement,pAux[i],msg);
     }
 }
-*/
+

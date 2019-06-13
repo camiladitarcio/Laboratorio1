@@ -4362,3 +4362,249 @@
 	<string.h>
 	"../inc/LinkedList.h"
 
+1560443349 source:/home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/src/addNodeTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560439356 /home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/utest.h
+
+1560439355 /home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/inc/LinkedList.h
+
+1560439356 /home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/inc/Employee.h
+
+1560439356 source:/home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/src/addTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560439356 source:/home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/src/clearTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560439356 source:/home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/src/cloneTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560439356 source:/home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/src/containsAllTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560439356 source:/home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/src/containsTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560439356 source:/home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/src/deleteLinkedListTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560439356 source:/home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/src/Employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../inc/Employee.h"
+
+1560439356 source:/home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/src/getNodeTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560439356 source:/home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/src/getTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560439356 source:/home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/src/indexOfTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560439356 source:/home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/src/isEmptyTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560439356 source:/home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/src/lenTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560443349 source:/home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/src/main_test.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	"../inc/newTest.h"
+	"../inc/addTest.h"
+	"../inc/getNodeTest.h"
+	"../inc/addNodeTest.h"
+	"../inc/deleteLinkedListTest.h"
+	"../inc/lenTest.h"
+	"../inc/getTest.h"
+	"../inc/containsTest.h"
+	"../inc/setTest.h"
+	"../inc/removeTest.h"
+	"../inc/clearTest.h"
+	"../inc/cloneTest.h"
+	"../inc/pushTest.h"
+	"../inc/indexOfTest.h"
+	"../inc/isEmptyTest.h"
+	"../inc/popTest.h"
+	"../inc/subListTest.h"
+	"../inc/containsAllTest.h"
+	"../inc/sortTest.h"
+
+1560439356 /home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/inc/newTest.h
+
+1560439356 /home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/inc/addTest.h
+
+1560439356 /home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/inc/getNodeTest.h
+
+1560439356 /home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/inc/addNodeTest.h
+
+1560439356 /home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/inc/deleteLinkedListTest.h
+
+1560439356 /home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/inc/lenTest.h
+
+1560439356 /home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/inc/getTest.h
+
+1560439356 /home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/inc/containsTest.h
+
+1560439356 /home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/inc/setTest.h
+
+1560439356 /home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/inc/removeTest.h
+
+1560439356 /home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/inc/clearTest.h
+
+1560439356 /home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/inc/cloneTest.h
+
+1560439356 /home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/inc/pushTest.h
+
+1560439356 /home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/inc/indexOfTest.h
+
+1560439356 /home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/inc/isEmptyTest.h
+
+1560439356 /home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/inc/popTest.h
+
+1560439356 /home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/inc/subListTest.h
+
+1560439356 /home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/inc/containsAllTest.h
+
+1560439356 /home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/inc/sortTest.h
+
+1560439356 source:/home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/src/newTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+
+1560439356 source:/home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/src/popTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560439356 source:/home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/src/pushTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560439356 source:/home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/src/removeTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560439356 source:/home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/src/setTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560439356 source:/home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/src/sortTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560439356 source:/home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/src/subListTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1560439356 source:/home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/utest.c
+	"utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1560443505 source:/home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/src/LinkedList.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../inc/LinkedList.h"
+
+1560439355 source:/home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/src/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../testing/inc/main_test.h"
+	"../inc/LinkedList.h"
+
+1560439356 /home/ditar/dit/Laboratorio1/linkedlist_cascara_v6/testing/inc/main_test.h
+
