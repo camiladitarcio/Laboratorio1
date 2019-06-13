@@ -57,7 +57,7 @@ int main()
                 controller_ListEmployee(listaEmpleados);
                 break;
             case 7:
-                //ordenar empleados
+                controller_sortEmployee(listaEmpleados);
                 break;
             case 8:
                 controller_saveAsText("a.csv",listaEmpleados);

@@ -196,27 +196,23 @@ int employee_getHorasTrabajadas(Employee* this,int* horasTrabajadas)
     }
     return retorno;
 }
-/*
+
 int employee_criterioNombre(void* thisA,void* thisB)
 {
     char nombreA[128];
     char nombreB[128];
     int ret = 0;
 
-    employee_getNombre((Employee*),nombreA);
-
-
     employee_getNombre((Employee*)thisA,nombreA);
     employee_getNombre((Employee*)thisB,nombreB);
 
         if(strcmp(nombreA,nombreB)>0)
         {
-            retorno=1;
+            ret = 1;
         }
         else if(strcmp(nombreA,nombreB)<0)
         {
-            retorno=-1;
+            ret = -1;
         }
-    return retorno;
+    return ret;
 }
-*/
