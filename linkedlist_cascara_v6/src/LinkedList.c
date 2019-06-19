@@ -269,7 +269,20 @@ int ll_remove(LinkedList* this,int index)
 int ll_clear(LinkedList* this)
 {
     int returnAux = -1;
-
+    Node *pNode;
+    int i;
+    if(this!=null)
+    {
+        for(i=0;i<size;i++)
+        {
+            pNode = getNode(this,i);
+         if(pNode!=NULL)
+         {
+             free(pNode);
+         }
+        }
+        free(this);
+    }
     return returnAux;
 }
 
