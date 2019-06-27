@@ -1,0 +1,98 @@
+# depslib dependency file v1.0
+1560200714 source:/home/ditar/dit/Laboratorio1/persona/Linux_64/Controller.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"Employee.h"
+	"Controller.h"
+	"parser.h"
+	"utn.h"
+
+1559879609 /home/ditar/dit/Laboratorio1/persona/Linux_64/LinkedList.h
+
+1559879738 /home/ditar/dit/Laboratorio1/persona/Linux_64/Employee.h
+
+1559879609 /home/ditar/dit/Laboratorio1/persona/Linux_64/Controller.h
+
+1559879609 /home/ditar/dit/Laboratorio1/persona/Linux_64/parser.h
+
+1559879609 /home/ditar/dit/Laboratorio1/persona/Linux_64/utn.h
+
+1560030410 source:/home/ditar/dit/Laboratorio1/persona/Linux_64/Employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Employee.h"
+	"LinkedList.h"
+	"Controller.h"
+	"utn.h"
+
+1560030253 source:/home/ditar/dit/Laboratorio1/persona/Linux_64/main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+
+1560184505 source:/home/ditar/dit/Laboratorio1/persona/Linux_64/parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1559879609 source:/home/ditar/dit/Laboratorio1/persona/Linux_64/utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+
+1561593100 source:/home/alumno/DITAR/2DO_PARCIAL/Controller.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"Entrega.h"
+	"Controller.h"
+	"parser.h"
+	"utn.h"
+
+1561585991 /home/alumno/DITAR/2DO_PARCIAL/LinkedList.h
+
+1561586698 /home/alumno/DITAR/2DO_PARCIAL/Entrega.h
+
+1561592565 /home/alumno/DITAR/2DO_PARCIAL/Controller.h
+
+1561587229 /home/alumno/DITAR/2DO_PARCIAL/parser.h
+
+1561585991 /home/alumno/DITAR/2DO_PARCIAL/utn.h
+
+1561589950 source:/home/alumno/DITAR/2DO_PARCIAL/Entrega.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Entrega.h"
+	"LinkedList.h"
+	"Controller.h"
+	"utn.h"
+
+1561593696 source:/home/alumno/DITAR/2DO_PARCIAL/main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Entrega.h"
+	"utn.h"
+
+1561587167 source:/home/alumno/DITAR/2DO_PARCIAL/parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Entrega.h"
+
+1561585991 source:/home/alumno/DITAR/2DO_PARCIAL/utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+
